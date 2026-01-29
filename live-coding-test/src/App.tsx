@@ -6,7 +6,7 @@ function App() {
 
   return (
     <Layout>
-      <div>Live coding test</div>
+      <div>Home</div>
       <Link to="/counter">Go to Counter</Link>
     </Layout>
   )

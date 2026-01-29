@@ -8,11 +8,15 @@ export default function Counter() {
     const [count, setCount] = useState(0);
 
     return (
-        <Layout>
-            <h1> Counter : {count}</h1>
-            <button type='button' onClick={() => setCount(count + 1)}>+</button>
-            <button type='button' onClick={() => setCount(count - 1)}>-</button>
-        </Layout>
-    )
+      <Layout>
+        <h1> Counter : {count}</h1>
+        <button type="button" className="btn-primary" onClick={() => setCount(count + 1)}>
+          +
+        </button>
+        <button type="button" className="btn-primary" onClick={() => setCount(count - 1)}>
+          -
+        </button>
+      </Layout>
+    );
     
 }
