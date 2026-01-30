@@ -1,5 +1,6 @@
 // 1. Create a Counter Component
 // Create a simple counter component that increases or decreases the count when clicking buttons.
+
 import { useState } from 'react';
 import Layout from '../shared/Layout';
 

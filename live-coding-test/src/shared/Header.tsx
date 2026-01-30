@@ -7,8 +7,10 @@ export default function Header() {
         <Link to="/" className="text-blue-600 font-bold hover:text-blue-800 transition-colors">
           Home
         </Link>
-        <div className="grow">
-          <h1>Live Coding Test</h1>
+        <div className="grow flex justify-center">
+          <div className="">
+            <h1>Live Coding Test</h1>
+          </div>
         </div>
       </header>
     );
