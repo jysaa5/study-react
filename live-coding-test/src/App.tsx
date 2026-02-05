@@ -14,6 +14,9 @@ function App() {
         <Link to="/toggle-switch" className="block w-full border-2 border-indigo-500 p-2 mb-2 text-center">
           Go to Toggle Switch
         </Link>
+        <Link to="/to-do-list" className="block w-full border-2 border-indigo-500 p-2 mb-2 text-center">
+          Go to To Do List
+        </Link>
       </div>
     </Layout>
   );

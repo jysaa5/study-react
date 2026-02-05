@@ -1,5 +1,6 @@
 // 2. Implement a Toggle Switch
 // Create a toggle switch component between "On" and "Off" states.
+
 import { useState } from 'react';
 import Layout from '../shared/Layout';
 
