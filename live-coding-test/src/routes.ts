@@ -1,24 +1,24 @@
-import { createBrowserRouter } from "react-router";
-import App from "./App.tsx";
-import Counter from "./challenges/Counter.tsx";
+import { createBrowserRouter } from 'react-router';
+import App from './App.tsx';
+import Counter from './challenges/Counter.tsx';
 import ToggleSwitch from './challenges/ToggleSwitch.tsx';
 import ToDoList from './challenges/ToDoList.tsx';
 
 export const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     Component: App,
   },
   {
-    path: "/counter",
+    path: '/counter',
     Component: Counter,
   },
   {
-    path: "/toggle-switch",
+    path: '/toggle-switch',
     Component: ToggleSwitch,
   },
   {
-    path: "/to-do-list",
+    path: '/to-do-list',
     Component: ToDoList,
   },
 ]);
