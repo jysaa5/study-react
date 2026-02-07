@@ -24,31 +24,36 @@ export default function ToDoList() {
       <Layout>
         <div>
           <h1>To Do List</h1>
-                <input type="text" value={text} onChange={(e) => setText(e.target.value)}/>
-                <button type="button" onClick={() => {
-                    setItems([...items, { text, isCompleted: false }]);
-                    setText(''); 
-          }}>add</button>
+          <input type="text" className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" value={text} onChange={(e) => setText(e.target.value)} />
+          <button
+            type="button"
+            onClick={() => {
+              setItems([...items, { text, isCompleted: false }]);
+              setText("");
+            }}
+          >
+            add
+          </button>
         </div>
-            <div>
-                {items.map((item, index) => (
-                    <ToDoItem 
-                        key={index}
-                        text={item.text}
-                        isCompleted={item.isCompleted}
-                        onToggle={() => {
-                            const newItems = [...items];
-                            newItems[index].isCompleted = !newItems[index].isCompleted;
-                            setItems(newItems);
-                        }}
-                        onRemove={() => {
-                            const newItems = [...items];
-                            newItems.splice(index, 1);
-                            setItems(newItems);
-                        }}
-                    />
-                ))}
-            </div>
+        <div>
+          {items.map((item, index) => (
+            <ToDoItem
+              key={index}
+              text={item.text}
+              isCompleted={item.isCompleted}
+              onToggle={() => {
+                const newItems = [...items];
+                newItems[index].isCompleted = !newItems[index].isCompleted;
+                setItems(newItems);
+              }}
+              onRemove={() => {
+                const newItems = [...items];
+                newItems.splice(index, 1);
+                setItems(newItems);
+              }}
+            />
+          ))}
+        </div>
       </Layout>
     );
 }
