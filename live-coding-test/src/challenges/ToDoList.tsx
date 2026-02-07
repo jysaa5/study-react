@@ -18,21 +18,26 @@ function ToDoItem({
   onRemove: () => void;
 }) {
   return (
-    <div className="py-4 flex items-center gap-2">
+    <li
+      className="py-4 flex items-center gap-2"
+      style={{ textDecoration: isCompleted ? 'line-through' : 'none' }}
+    >
       <label>{index + 1}.</label>
       <span
         className={
           (isCompleted ? 'bg-sky-400' : '') +
           ' border border-gray-300 rounded-lg px-5 py-2.5 ml-2'
         }
-        onClick={onToggle}
       >
         {text}
       </span>
+      <button type="button" className="btn-secondary" onClick={onToggle}>
+        Toggle
+      </button>
       <button type="button" className="btn-secondary" onClick={onRemove}>
         Remove
       </button>
-    </div>
+    </li>
   );
 }
 
@@ -68,6 +73,7 @@ export default function ToDoList() {
           <input
             type="text"
             className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+            placeholder="Add a to-do"
             value={text}
             onChange={(e) => setText(e.target.value)}
           />
@@ -76,7 +82,7 @@ export default function ToDoList() {
           </button>
         </div>
       </div>
-      <div>
+      <ul>
         {todos.map((item, index) => (
           <ToDoItem
             key={index}
@@ -87,7 +93,7 @@ export default function ToDoList() {
             onRemove={() => removeTodo(index)}
           />
         ))}
-      </div>
+      </ul>
     </Layout>
   );
 }
