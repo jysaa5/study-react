@@ -25,6 +25,12 @@ function App() {
         >
           Go to To Do List
         </Link>
+        <Link
+          to="/fetch-data-api"
+          className="block w-full border-2 border-indigo-500 p-2 mb-2 text-center"
+        >
+          Go to Fetch Data API
+        </Link>
       </div>
     </Layout>
   );

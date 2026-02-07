@@ -3,6 +3,7 @@ import App from './App.tsx';
 import Counter from './challenges/Counter.tsx';
 import ToggleSwitch from './challenges/ToggleSwitch.tsx';
 import ToDoList from './challenges/ToDoList.tsx';
+import FetchDataAPI from './challenges/FetchDataAPI.tsx';
 
 export const router = createBrowserRouter([
   {
@@ -20,5 +21,9 @@ export const router = createBrowserRouter([
   {
     path: '/to-do-list',
     Component: ToDoList,
+  },
+  {
+    path: '/fetch-data-api',
+    Component: FetchDataAPI,
   },
 ]);
