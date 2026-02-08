@@ -37,6 +37,12 @@ function App() {
         >
           Search Bar
         </Link>
+        <Link
+          to="/dropdown-menu"
+          className="block w-full border-2 border-indigo-500 p-2 mb-2 text-center"
+        >
+          Dropdown Menu
+        </Link>
       </div>
     </Layout>
   );

@@ -8,6 +8,8 @@
 
   --text-huge: 3.2rem;
   --line-height-tight: 1.1;
+
+  --spacing-anchor-gap: 0.5rem;
 }
 
 @layer base {
@@ -32,12 +34,31 @@
            bg-[#1a1a1a] text-white transition-colors cursor-pointer
            hover:border-brand-purple focus:outline-none;
   }
+
   .btn-secondary {
     @apply rounded-lg border border-gray-300 px-5 py-2.5 font-medium 
            bg-white text-gray-700 transition-colors cursor-pointer
            hover:bg-gray-100 focus:outline-none;
   }
+
   .input-field {
     @apply w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent;
+  }
+  /* 드롭다운 버튼 전용 */
+  .dropdown-trigger {
+    anchor-name: --dropdown-anchor;
+    /* @apply .btn-primary; /* 기존에 만든 버튼 스타일 상속 */
+  }
+
+  /* 드롭다운 팝업 전용 */
+  .dropdown-menu {
+    margin: 0;
+    position-anchor: --dropdown-anchor;
+    top: anchor(bottom);
+    left: anchor(left);
+    /* 버튼과 약간의 간격을 주고 싶다면 아래 주석 해제 */
+    /* top: calc(anchor(bottom) + var(--spacing-anchor-gap)); */
+
+    @apply bg-white border border-gray-200 shadow-xl rounded-xl p-2 min-w-[160px];
   }
 }
