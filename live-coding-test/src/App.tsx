@@ -11,31 +11,31 @@ function App() {
           to="/counter"
           className="block w-full border-2 border-indigo-500 p-2 mb-2 text-center"
         >
-          Go to Counter
+          Counter
         </Link>
         <Link
           to="/toggle-switch"
           className="block w-full border-2 border-indigo-500 p-2 mb-2 text-center"
         >
-          Go to Toggle Switch
+          Toggle Switch
         </Link>
         <Link
           to="/to-do-list"
           className="block w-full border-2 border-indigo-500 p-2 mb-2 text-center"
         >
-          Go to To Do List
+          To Do List
         </Link>
         <Link
           to="/fetch-data-api"
           className="block w-full border-2 border-indigo-500 p-2 mb-2 text-center"
         >
-          Go to Fetch Data API
+          Fetch Data API
         </Link>
         <Link
           to="/search-bar"
           className="block w-full border-2 border-indigo-500 p-2 mb-2 text-center"
         >
-          Go to Search Bar
+          Search Bar
         </Link>
       </div>
     </Layout>
