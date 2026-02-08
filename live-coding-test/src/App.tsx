@@ -31,6 +31,12 @@ function App() {
         >
           Go to Fetch Data API
         </Link>
+        <Link
+          to="/search-bar"
+          className="block w-full border-2 border-indigo-500 p-2 mb-2 text-center"
+        >
+          Go to Search Bar
+        </Link>
       </div>
     </Layout>
   );

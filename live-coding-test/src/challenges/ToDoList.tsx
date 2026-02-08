@@ -72,7 +72,7 @@ export default function ToDoList() {
         <div className="flex gap-2">
           <input
             type="text"
-            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+            className="input-field"
             placeholder="Add a to-do"
             value={text}
             onChange={(e) => setText(e.target.value)}
