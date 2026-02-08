@@ -4,13 +4,15 @@
 import { useState } from 'react';
 import Layout from '../shared/Layout';
 
-export default function SearchBar() {
+function SearchBar({ list }: { list: string[] }) {
   const [query, setQuery] = useState('');
-  const list = ['Apple', 'Banana', 'Orange', 'Grapes', 'Mango', 'Pineapple'];
 
-  const search = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const changeQuery = (e: React.ChangeEvent<HTMLInputElement>) => {
     setQuery(e.target.value);
   };
+  const search = list.filter((item) =>
+    item.toLowerCase().includes(query.toLowerCase()),
+  );
 
   return (
     <Layout>
@@ -19,15 +21,19 @@ export default function SearchBar() {
         className="input-field"
         placeholder="Search"
         value={query}
-        onChange={search}
+        onChange={changeQuery}
       />
       <ul>
-        {list
-          .filter((item) => item.toLowerCase().includes(query.toLowerCase()))
-          .map((item, index) => (
-            <li key={index}>{item}</li>
-          ))}
+        {search.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
       </ul>
     </Layout>
   );
+}
+
+export default function SearchBarApp() {
+  const list = ['Apple', 'Banana', 'Orange', 'Grapes', 'Mango', 'Pineapple'];
+
+  return <SearchBar list={list} />;
 }
