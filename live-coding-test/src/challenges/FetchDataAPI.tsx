@@ -4,7 +4,7 @@
 import { useEffect, useState } from 'react';
 import Layout from '../shared/Layout';
 
-interface DataItem {
+interface Data {
   id: number;
   title: string;
   body: string;
@@ -12,7 +12,7 @@ interface DataItem {
 }
 
 export default function FetchDataList() {
-  const [data, setData] = useState([] as DataItem[]);
+  const [data, setData] = useState([] as Data[]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
