@@ -4,7 +4,7 @@
 import { useState } from 'react';
 import Layout from '../shared/Layout';
 
-export default function ToggleSwitch() {
+const ToggleSwitch = () => {
   const [on, setOn] = useState(false);
   return (
     <Layout>
@@ -13,4 +13,6 @@ export default function ToggleSwitch() {
       </button>
     </Layout>
   );
-}
+};
+
+export default ToggleSwitch;

@@ -4,7 +4,7 @@
 import { useState } from 'react';
 import Layout from '../shared/Layout';
 
-export default function Counter() {
+const Counter = () => {
   const [count, setCount] = useState(0);
 
   const addCount = () => {
@@ -28,4 +28,6 @@ export default function Counter() {
       </div>
     </Layout>
   );
-}
+};
+
+export default Counter;

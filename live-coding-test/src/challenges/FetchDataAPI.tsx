@@ -11,7 +11,7 @@ interface Data {
   userId: number;
 }
 
-export default function FetchDataList() {
+const FetchDataList = () => {
   const [data, setData] = useState([] as Data[]);
   const [loading, setLoading] = useState(true);
 
@@ -68,4 +68,6 @@ export default function FetchDataList() {
       </ul>
     </Layout>
   );
-}
+};
+
+export default FetchDataList;

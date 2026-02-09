@@ -4,7 +4,7 @@
 import { useState } from 'react';
 import Layout from '../shared/Layout';
 
-function ToDoItem({
+const ToDoItem = ({
   index,
   text,
   isCompleted,
@@ -16,7 +16,7 @@ function ToDoItem({
   isCompleted: boolean;
   onToggle: () => void;
   onRemove: () => void;
-}) {
+}) => {
   return (
     <li
       className="py-4 flex items-center gap-2"
@@ -39,9 +39,9 @@ function ToDoItem({
       </button>
     </li>
   );
-}
+};
 
-export default function ToDoList() {
+const ToDoList = () => {
   const [todos, setTodos] = useState(
     [] as { text: string; isCompleted: boolean }[],
   );
@@ -96,4 +96,6 @@ export default function ToDoList() {
       </ul>
     </Layout>
   );
-}
+};
+
+export default ToDoList;

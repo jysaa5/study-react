@@ -4,7 +4,7 @@
 import { useState } from 'react';
 import Layout from '../shared/Layout';
 
-function SearchBar({ items }: { items: string[] }) {
+const SearchBar = ({ items }: { items: string[] }) => {
   const [query, setQuery] = useState('');
 
   const changeQuery = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -32,10 +32,12 @@ function SearchBar({ items }: { items: string[] }) {
       </ul>
     </Layout>
   );
-}
+};
 
-export default function SearchBarApp() {
+const App = () => {
   const list = ['Apple', 'Banana', 'Orange', 'Grapes', 'Mango', 'Pineapple'];
 
   return <SearchBar items={list} />;
-}
+};
+
+export default App;
