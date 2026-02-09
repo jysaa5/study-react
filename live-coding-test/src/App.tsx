@@ -7,41 +7,26 @@ function App() {
     <Layout>
       <div>Home</div>
       <div className="flex flex-col gap-2">
-        <Link
-          to="/counter"
-          className="block w-full border-2 border-indigo-500 p-2 mb-2 text-center"
-        >
+        <Link to="/counter" className="link-item">
           Counter
         </Link>
-        <Link
-          to="/toggle-switch"
-          className="block w-full border-2 border-indigo-500 p-2 mb-2 text-center"
-        >
+        <Link to="/toggle-switch" className="link-item">
           Toggle Switch
         </Link>
-        <Link
-          to="/to-do-list"
-          className="block w-full border-2 border-indigo-500 p-2 mb-2 text-center"
-        >
+        <Link to="/to-do-list" className="link-item">
           To Do List
         </Link>
-        <Link
-          to="/fetch-data-api"
-          className="block w-full border-2 border-indigo-500 p-2 mb-2 text-center"
-        >
+        <Link to="/fetch-data-api" className="link-item">
           Fetch Data API
         </Link>
-        <Link
-          to="/search-bar"
-          className="block w-full border-2 border-indigo-500 p-2 mb-2 text-center"
-        >
+        <Link to="/search-bar" className="link-item">
           Search Bar
         </Link>
-        <Link
-          to="/dropdown-menu-popover"
-          className="block w-full border-2 border-indigo-500 p-2 mb-2 text-center"
-        >
-          Dropdown Menu
+        <Link to="/dropdown-popover" className="link-item">
+          Dropdown Popover
+        </Link>
+        <Link to="/dropdown" className="link-item">
+          Dropdown
         </Link>
       </div>
     </Layout>

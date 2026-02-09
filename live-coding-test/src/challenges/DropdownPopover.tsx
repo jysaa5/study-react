@@ -3,16 +3,16 @@
 
 import Layout from '../shared/Layout';
 
-function DropdownMenu({
+const DropdownContent = ({
   items,
   positionAnchor,
 }: {
   items: string[];
   positionAnchor: string;
-}) {
+}) => {
   return (
     <div
-      id="mypopover"
+      id="dropdownPopover"
       popover="auto"
       className="dropdown-menu"
       style={{ positionAnchor: positionAnchor }}
@@ -24,9 +24,9 @@ function DropdownMenu({
       </ul>
     </div>
   );
-}
+};
 
-export default function DropdownMenuApp() {
+const DropdownPopover = () => {
   const menuItems = ['Profile', 'Settings', 'Logout'];
   const list = ['Apple', 'Banana', 'Orange', 'Grapes', 'Mango', 'Pineapple'];
 
@@ -38,11 +38,11 @@ export default function DropdownMenuApp() {
           return (
             <li key={index} className="mb-2">
               <button
-                popoverTarget="mypopover"
+                popoverTarget="dropdownPopover"
                 className="dropdown-trigger btn-primary"
                 style={{ anchorName: anchorName }}
                 onMouseEnter={() => {
-                  const popover = document.getElementById('mypopover');
+                  const popover = document.getElementById('dropdownPopover');
                   if (popover) {
                     popover.hidePopover();
                     (
@@ -59,7 +59,9 @@ export default function DropdownMenuApp() {
           );
         })}
       </ul>
-      <DropdownMenu items={menuItems} positionAnchor="--anchor-default" />
+      <DropdownContent items={menuItems} positionAnchor="--anchor-default" />
     </Layout>
   );
-}
+};
+
+export default DropdownPopover;

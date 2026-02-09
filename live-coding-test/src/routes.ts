@@ -5,7 +5,8 @@ import ToggleSwitch from './challenges/ToggleSwitch.tsx';
 import ToDoList from './challenges/ToDoList.tsx';
 import FetchDataAPI from './challenges/FetchDataAPI.tsx';
 import SearchBar from './challenges/SearchBar.tsx';
-import DropdownMenuPopover from './challenges/DropdownMenuPopover.tsx';
+import DropdownPopover from './challenges/DropdownPopover.tsx';
+import Dropdown from './challenges/Dropdown.tsx';
 
 export const router = createBrowserRouter([
   {
@@ -33,7 +34,11 @@ export const router = createBrowserRouter([
     Component: SearchBar,
   },
   {
-    path: '/dropdown-menu-popover',
-    Component: DropdownMenuPopover,
+    path: '/dropdown-popover',
+    Component: DropdownPopover,
+  },
+  {
+    path: '/dropdown',
+    Component: Dropdown,
   },
 ]);
