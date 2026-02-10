@@ -63,6 +63,7 @@
   }
 
   .tabs {
+    @apply min-w-80;
   }
 
   .tabs-list {
@@ -75,5 +76,9 @@
 
   .tab-panel {
     @apply p-4;
+  }
+
+  .active {
+    @apply border-b-2 border-indigo-500 font-medium;
   }
 }
