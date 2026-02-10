@@ -79,6 +79,6 @@
   }
 
   .active {
-    @apply border-b-2 border-indigo-500 font-medium;
+    @apply border-b-2 bg-indigo-500 font-medium;
   }
 }
