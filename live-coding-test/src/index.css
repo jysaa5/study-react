@@ -44,25 +44,36 @@
   .input-field {
     @apply w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent;
   }
-  /* 드롭다운 버튼 전용 */
+
   .dropdown-trigger {
     anchor-name: --dropdown-anchor;
-    /* @apply .btn-primary; /* 기존에 만든 버튼 스타일 상속 */
   }
 
-  /* 드롭다운 팝업 전용 */
   .dropdown-menu {
     margin: 0;
     position-anchor: --dropdown-anchor;
     top: anchor(bottom);
     left: anchor(left);
-    /* 버튼과 약간의 간격을 주고 싶다면 아래 주석 해제 */
-    /* top: calc(anchor(bottom) + var(--spacing-anchor-gap)); */
 
     @apply bg-white border border-gray-200 shadow-xl rounded-xl p-2 min-w-40;
   }
 
   .link-item {
     @apply block w-full border-2 border-indigo-500 p-2 mb-2 text-center;
+  }
+
+  .tabs {
+  }
+
+  .tabs-list {
+    @apply flex justify-start border-b border-gray-300;
+  }
+
+  .tabs-content {
+    @apply mt-4 border border-gray-300;
+  }
+
+  .tab-panel {
+    @apply p-4;
   }
 }

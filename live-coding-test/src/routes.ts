@@ -7,6 +7,7 @@ import FetchDataAPI from './challenges/FetchDataAPI.tsx';
 import SearchBar from './challenges/SearchBar.tsx';
 import DropdownPopover from './challenges/DropdownPopover.tsx';
 import Dropdown from './challenges/Dropdown.tsx';
+import Tabs from './challenges/Tabs.tsx';
 
 export const router = createBrowserRouter([
   {
@@ -41,4 +42,5 @@ export const router = createBrowserRouter([
     path: '/dropdown',
     Component: Dropdown,
   },
+  { path: '/tabs', Component: Tabs },
 ]);

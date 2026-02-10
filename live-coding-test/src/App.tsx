@@ -28,6 +28,9 @@ function App() {
         <Link to="/dropdown" className="link-item">
           Dropdown
         </Link>
+        <Link to="/tabs" className="link-item">
+          Tabs
+        </Link>
       </div>
     </Layout>
   );
