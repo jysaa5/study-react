@@ -29,14 +29,9 @@ const Tabs = () => {
           ))}
         </div>
         <div className="tabs-content">
-          {tabs.map(
-            (tab) =>
-              activeTab === tab.id && (
-                <div key={tab.id} className="tab-panel">
-                  {tab.content}
-                </div>
-              ),
-          )}
+          <div className="tab-panel">
+            {tabs.find((tab) => tab.id === activeTab)?.content}
+          </div>
         </div>
       </div>
     </Layout>
