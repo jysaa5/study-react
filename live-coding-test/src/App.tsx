@@ -31,6 +31,9 @@ function App() {
         <Link to="/tabs" className="link-item">
           Tabs
         </Link>
+        <Link to="/modal" className="link-item">
+          Modal
+        </Link>
       </div>
     </Layout>
   );

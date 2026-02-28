@@ -8,6 +8,7 @@ import SearchBar from './challenges/SearchBar.tsx';
 import DropdownPopover from './challenges/DropdownPopover.tsx';
 import Dropdown from './challenges/Dropdown.tsx';
 import Tabs from './challenges/Tabs.tsx';
+import Modal from './challenges/Modal.tsx';
 
 export const router = createBrowserRouter([
   {
@@ -43,4 +44,5 @@ export const router = createBrowserRouter([
     Component: Dropdown,
   },
   { path: '/tabs', Component: Tabs },
+  { path: '/modal', Component: Modal },
 ]);
