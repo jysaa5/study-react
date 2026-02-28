@@ -1,0 +1,11 @@
+@theme {
+  --color-brand-purple: #646cff;
+  --color-brand-hover: #535bf2;
+
+  --font-main: 'system-ui', 'Avenir', 'Helvetica', 'Arial', 'sans-serif';
+
+  --text-huge: 3.2rem;
+  --line-height-tight: 1.1;
+
+  --spacing-anchor-gap: 0.5rem;
+}

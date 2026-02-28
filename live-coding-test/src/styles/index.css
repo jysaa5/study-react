@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+
+@import './theme.css';
+@import './base.css';
+@import './anchor.css';
+@import './components/button.css';
+@import './components/input.css';
+@import './components/tab.css';
+@import './components/modal.css';
+
+
+
+@layer components {
+  .link-item {
+    @apply block w-full border-2 border-indigo-500 p-2 mb-2 text-center;
+  }
+  .active {
+    @apply border-b-2 bg-indigo-500 font-medium;
+  }
+}

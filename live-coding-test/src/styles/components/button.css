@@ -1,0 +1,14 @@
+@layer components {
+  .btn-primary {
+    @apply rounded-lg border border-transparent px-5 py-2.5 font-medium 
+           bg-[#1a1a1a] text-white transition-colors cursor-pointer
+           hover:border-brand-purple focus:outline-none;
+  }
+
+  .btn-secondary {
+    @apply rounded-lg border border-gray-300 px-5 py-2.5 font-medium 
+           bg-white text-gray-700 transition-colors cursor-pointer
+           hover:bg-gray-100 focus:outline-none;
+  }
+
+}

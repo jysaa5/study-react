@@ -1,0 +1,14 @@
+@layer components {
+  .dropdown-trigger {
+    anchor-name: --dropdown-anchor;
+  }
+
+  .dropdown-menu {
+    margin: 0;
+    position-anchor: --dropdown-anchor;
+    top: anchor(bottom);
+    left: anchor(left);
+
+    @apply bg-white border border-gray-200 shadow-xl rounded-xl p-2 min-w-40;
+  }
+}

@@ -1,0 +1,15 @@
+@layer base {
+  :root {
+    font-family: var(--font-main);
+    line-height: 1.5;
+    background-color: #ffffff;
+    color: #213547;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      background-color: #ffffff;
+      color: #213547;
+    }
+  }
+}

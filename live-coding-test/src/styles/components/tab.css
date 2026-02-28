@@ -1,0 +1,17 @@
+@layer components {
+  .tabs {
+    @apply min-w-80;
+  }
+
+  .tabs-list {
+    @apply flex justify-start border-b border-gray-300;
+  }
+
+  .tabs-content {
+    @apply mt-4 border border-gray-300;
+  }
+
+  .tab-panel {
+    @apply p-4;
+  }
+}
